@@ -94,7 +94,7 @@ String _singeQuoteAttributeReplace(Match match) {
     case '<':
       return '&lt;';
     default:
-      return _asNumericCharacterReferences(toEscape);
+      return toEscape;//_asNumericCharacterReferences(toEscape);
   }
 }
 
@@ -113,7 +113,7 @@ String _doubleQuoteAttributeReplace(Match match) {
     case '<':
       return '&lt;';
     default:
-      return _asNumericCharacterReferences(toEscape);
+      return toEscape;//_asNumericCharacterReferences(toEscape);
   }
 }
 
